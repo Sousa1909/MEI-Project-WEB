@@ -1,0 +1,21 @@
+.icon-small {
+    height: 40px;
+}
+
+.icon-emblem {
+    height: 60px;
+}
+
+.sidebar {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 15%;
+    border-right: 1px solid #dee2e6;
+}
+
+.content {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 85%;
+    background-color: grey;
+}

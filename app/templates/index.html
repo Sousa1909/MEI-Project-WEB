@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MEI WEB</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/custom.css">
+</head>
+<body>
+
+    {% include 'partials/header.html' %}
+
+    <div class="row">
+        <div class="col-md-3 sidebar">
+            {% include 'partials/sidemenu.html' %}
+        </div>
+        <div class="col-md-9 content">
+            <h1>Received Data</h1>
+            <p id="sender-id">Sender ID: {{ sender_id }}</p>
+            <p id="generated-number">Generated Number: {{ generated_number }}</p>
+        </div>
+    </div>
+
+    {% include 'partials/footer.html' %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
