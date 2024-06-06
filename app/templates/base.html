@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MEI WEB</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/custom.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/min/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
+</head>
+<body>
+
+    {% include 'partials/header.html' %}
+
+    <div class="row">
+        <div class="col-md-3 sidebar">
+            {% include 'partials/sidemenu.html' %}
+        </div>
+        <div class="col-md-9 content" style="padding: 20px;">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    {% include 'partials/footer.html' %}
+</body>
+</html>

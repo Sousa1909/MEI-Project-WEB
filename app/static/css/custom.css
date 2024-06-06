@@ -19,3 +19,18 @@
     width: 85%;
     background-color: grey;
 }
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-container .form-group {
+    margin-bottom: 0;
+}
+
+.card-padding{
+    padding: 10px;
+}

@@ -6,7 +6,7 @@ def generate_number():
     return random.randint(10, 30)
 
 def generate_sender():
-    return random.randint(1,3)
+    return random.randint(1,6)
 
 def send_data():
     sender_id = "sender_" + str(generate_sender())
@@ -24,4 +24,4 @@ def send_data():
 if __name__ == '__main__':
     while True:
         send_data()
-        time.sleep(30)  # Send data every 30 seconds
+        time.sleep(20)  # Send data every 20 seconds
